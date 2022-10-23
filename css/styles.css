@@ -6,13 +6,9 @@
 html{
 	scroll-padding-top: 100px;
 }
-/*
-.main-container{
-	width: 100%;
-	height: 100vh;
-
-}*/
-
+body{
+	/*min-width: 640px;*/
+}
 .header{
 	width: 100%;
 	height: 100px;
@@ -222,159 +218,68 @@ html{
 
 @media (min-width: 820px) and (max-width: 1008px) and (orientation: landscape){
 
+	html{
+	scroll-padding-top: 85px;
+	}
+
+	.header{
+		height: 85px;
+	}
+
 
 	.list-item{
-		width: 20%;
-		/*border: 2px black solid;*/
 		font-size: 0.8em;
-		display: flex;
-		justify-content: center;
-		box-shadow: 2px 4px 2px #bcbaa9 , -2px 4px 2px #bcbaa9;
-		height: 40%;
-		text-align: center;
-		background-color: #d5d6bf;
-		border-radius: 10px;
-		color: #232526;
-		font-family: 'Kanit', sans-serif;
-		text-decoration: none;
-		align-items: center;
-		z-index: 999;
-	}
-
-	.list-item.active{
-		color: #e36c07;
-	}
-	.list-item:hover{
-		box-shadow: 2px 2px 2px #bcbaa9 , -2px 2px 2px #bcbaa9;
-		background-color: #c3c4ab;	
 	}
 
 	.contact-floater{
 		height: 80px;
 		width: 80px;
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		border-radius: 100%;
-		background-color: #232526;
-		display: flex;
-		box-shadow: 0px 10px 10px #232526 ;
-		animation: jiggle 2s linear infinite;
-		z-index: 99999;	
 	}
 
 	.first-container{
-		position: relative;
-		background: linear-gradient(140deg, #232526 , #414345 );
 		height: 400px;
-		/*z-index:-1;*/
-		display: flex;
-		align-content: flex-end;
-		/*z-index: 999;*/
 	}
 
-	.background-image{
-		position: relative;
-		margin-top: 20px;
-		width: 50%;
-		height: 100%;
-		background: url(../img/main-background.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-
-
-	}
 
 	.content{
-		box-sizing: border-box;
-		position: relative;
-		/*margin-top: 50px;*/
-		padding: 0px 50px 50px 50px;
-		text-align: center;
-		width: 50%;
-		color: #e5ded3;
-		font-family: 'Kanit', sans-serif;
 		font-size: 20px;
-		/*padding-top: -20px;*/
+	}
 
-	}
-	.content h1{
-	    text-shadow: 8px 6px 10px #131111;
-	}
-	.content span{
-		font-size: 1.5em;
-		color: #e36c07;
-	}
 	.content p{
 
 		padding-bottom: 30px;
-		color: #e36c07;
 	}
 
 	.cta-button{
-		display: inline-block;
 		width: 90px;
 		height: 35px;
 		margin-right: 30px;
 		margin-left: 30px;
-		border-radius: 10px;
-		box-shadow: 2px 10px 5px #232526;
-		background-color: #e5ded3;
-		color: #232526;
 
-	}
-	.cta-button:hover{
-		color: #e36c07;
-		box-shadow: 2px 5px 5px #232526;
 	}
 	.second-container{
 
-		background: linear-gradient(140deg, #e5ded3 , #f2ebd8 );
 		height: 400px;
-		z-index: 99;
-		box-shadow: inset 0px 10px 4px #d0c5b4;
-		position: relative;
 	}
 
 	.decorator-orange{
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
 		height: 286px;
 		width: 360px;
-		background: url(../img/decorator-orange.png);
-		background-size: contain;
-		background-repeat: no-repeat;
 	}
 
 	.decorator-white{
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
 		height: 286px;
 		width: 360px;
-		background: url(../img/decorator-white.png);
-		background-size: contain;
-		background-repeat: no-repeat;
 	}
 
 	.third-container{
-		background: linear-gradient(140deg, #e36c07 , #e7870b );
 		height: 400px;	
-		z-index: 9;
-		box-shadow: inset 0px 10px 4px #c06f06;
-		position: relative;
 	}
 	.footer{
 		height: 150px;
-		background: linear-gradient(140deg, #232526 , #414345 );
-		box-shadow: inset 0px 10px 4px #181818;
 	}
-	.contact-floater img{
-		height: 75%;
-		width: 75%;
-		margin: auto;	
-
+	.decoration-blog{
+		height: 150px;
 
 	}
 }
@@ -386,175 +291,59 @@ html{
 	}
 
 	.header{
-		width: 100%;
 		height: 70px;
-		background-color: #e5ded3;
-		box-shadow: 0px 16px 0px #d0c5b4;
-		position: sticky;
-		top:0px;
-		z-index: 9999;
-	}
-
-	.header-sections{
-		width: 100%;
-		position: absolute;
-		height:100%;
-		display: flex;
-		justify-content: center;
 	}
 
 	.list-item{
-		width: 20%;
-		/*border: 2px black solid;*/
 		font-size: 0.6em;
-		display: flex;
-		justify-content: center;
-		box-shadow: 2px 4px 2px #bcbaa9 , -2px 4px 2px #bcbaa9;
-		height: 40%;
-		text-align: center;
-		background-color: #d5d6bf;
-		border-radius: 10px;
-		color: #232526;
-		font-family: 'Kanit', sans-serif;
-		text-decoration: none;
-		align-items: center;
-		z-index: 999;
-	}
-
-	.list-item.active{
-		color: #e36c07;
-	}
-	.list-item:hover{
-		box-shadow: 2px 2px 2px #bcbaa9 , -2px 2px 2px #bcbaa9;
-		background-color: #c3c4ab;	
 	}
 
 	.contact-floater{
 		height: 50px;
 		width: 50px;
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		border-radius: 100%;
-		background-color: #232526;
-		display: flex;
-		box-shadow: 0px 10px 10px #232526 ;
-		animation: jiggle 2s linear infinite;
-		z-index: 99999;	
 	}
 
 	.first-container{
-		position: relative;
-		background: linear-gradient(140deg, #232526 , #414345 );
 		height: 300px;
-		/*z-index:-1;*/
-		display: flex;
-		align-content: flex-end;
-		/*z-index: 999;*/
-	}
-
-	.background-image{
-		position: relative;
-		margin-top: 20px;
-		width: 50%;
-		height: 100%;
-		background: url(../img/main-background.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-
-
 	}
 
 	.content{
-		box-sizing: border-box;
-		position: relative;
-		/*margin-top: 50px;*/
-		padding: 0px 50px 50px 50px;
-		text-align: center;
-		width: 50%;
-		color: #e5ded3;
-		font-family: 'Kanit', sans-serif;
 		font-size: 15px;
-		/*padding-top: -20px;*/
+	}
 
-	}
-	.content h1{
-	    text-shadow: 8px 6px 10px #131111;
-	}
-	.content span{
-		font-size: 1.5em;
-		color: #e36c07;
-	}
 	.content p{
-		text-align: center;
 		padding-bottom: 15px;
-		color: #e36c07;
 	}
 
 	.cta-button{
-		display: inline-block;
 		width: 60px;
 		height: 25px;
 		margin-right: 10px;
 		margin-left: 10px;
 		border-radius: 5px;
-		box-shadow: 2px 10px 5px #232526;
-		background-color: #e5ded3;
-		color: #232526;
-
-	}
-	.cta-button:hover{
-		color: #e36c07;
-		box-shadow: 2px 5px 5px #232526;
 	}
 	.second-container{
-
-		background: linear-gradient(140deg, #e5ded3 , #f2ebd8 );
 		height: 300px;
-		z-index: 99;
-		box-shadow: inset 0px 10px 4px #d0c5b4;
-		position: relative;
 	}
 
 	.decorator-orange{
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
 		height: 182px;
 		width: 230px;
-		background: url(../img/decorator-orange.png);
-		background-size: contain;
-		background-repeat: no-repeat;
 	}
 
 	.decorator-white{
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
 		height: 182px;
 		width: 230px;
-		background: url(../img/decorator-white.png);
-		background-size: contain;
-		background-repeat: no-repeat;
 	}
 
 	.third-container{
-		background: linear-gradient(140deg, #e36c07 , #e7870b );
 		height: 300px;	
-		z-index: 9;
-		box-shadow: inset 0px 10px 4px #c06f06;
-		position: relative;
 	}
 	.footer{
 		height: 85px;
-		background: linear-gradient(140deg, #232526 , #414345 );
-		box-shadow: inset 0px 10px 4px #181818;
 	}
-	.contact-floater img{
-		height: 75%;
-		width: 75%;
-		margin: auto;	
-
+	.decoration-blog{
+		height: 100px;
 
 	}
 }
@@ -569,14 +358,7 @@ html{
 	background: linear-gradient(140deg, #232526 , #414345 );
 }
 
-.main-container-3{
-	width: 100%;
-	height: 400px;
-	position:sticky;
-	top:0px;
-	z-index: 99;
-	background: linear-gradient(140deg, #232526 , #414345 );
-}
+
 .curve1{
 	background: url(../img/curve2.png);
     filter: drop-shadow(0px -10px 2px #232526);
@@ -662,4 +444,64 @@ html{
 	text-align: center;
 	font-size: 2em;
 	padding:20px;
+}
+
+
+
+.main-container-3{
+	width: 100%;
+	height: 100vh;
+	position:relative;
+	top:0px;
+	/*z-index: -1;*/
+	background: linear-gradient(140deg, #232526 , #414345 );
+}
+
+
+.decoration-blog{
+	width: 100%;
+	height: 200px;
+	position:absolute;
+	bottom: 0px;
+	background: url(../img/curve1.png);
+	background-size: cover;
+
+}
+
+
+.blog-content{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	/*display: inline-block;*/
+	padding-top: 50px;
+	padding-right: auto;
+	/*padding-right: 50%;*/
+	/*padding-left: 50%;*/
+		z-index: 999;
+}
+
+.youtube{
+	color: #e5ded3;
+
+}
+
+.youtube:hover{
+	color:#e36c07;
+}
+
+@media (min-width: 640px) and (max-width: 819px) and (orientation: landscape){
+
+	.decoration-blog{
+		height: 130px;
+
+	}
+}
+
+@media (min-width: 820px)  and (max-width: 1024px) and (orientation: landscape){
+
+	.decoration-blog{
+		height: 175px;
+
+	}
 }
