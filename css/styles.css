@@ -20,10 +20,18 @@ html,body{
 body{
 	background-color: black;
 	position: absolute;
+	/*overflow: hidden;*/
+}
+.page-container{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
 }
 
 .main-container{
 	height: 130%;
+	z-index: -2;
 }
 
 .header{
@@ -33,15 +41,9 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
-.dummy-header{
-	height: 15.6%;
-	width: 100%;
-	position: absolute;
-	top:0px;
-	z-index:1;
-}
+
 .logo{
 	height: 80%;
 }
@@ -109,12 +111,32 @@ a:hover{
 	color: var(--orange);
 }
 .main-content{
-	height: 64.92%;
+	position: relative;
+	height: calc(64.92% - 20px);
 	background: linear-gradient(130deg, var(--dark), var(--dark-contrast) );
 	margin-top: 20px;
+	overflow: hidden;
+	/*z-index: -1;*/
+}
+
+.athlete-content{
+	position: absolute;
+	top: 70%;
+	height: 85%;
+	width: 100%;
+	background-color: var(--orange-contrast);
+	transition: all 1s cubic-bezier(0.19, 1.77, 1, 1);
+}
+.general-content{
+	position: absolute;
+	top: 85%;
+	height: 85%;
+	width: 100%;
+	background-color: var(--biege-contrast);
+	transition: all 1s cubic-bezier(0.19, 1.77, 1, 1);
 }
 
 .footer{
 	height: 23%;
-	background: linear-gradient(-130deg, var(--orange), var(--orange-contrast));
+	background: linear-gradient(-130deg, var(--dark), var(--dark-contrast));
 }
