@@ -20,6 +20,7 @@ html,body{
 body{
 	background-color: black;
 	position: absolute;
+	pointer-events: none;
 	/*overflow: hidden;*/
 }
 .page-container{
@@ -31,7 +32,8 @@ body{
 
 .main-container{
 	height: 130%;
-	z-index: -2;
+	/*z-index: 2;*/
+	pointer-events: none;
 }
 
 .header{
@@ -42,6 +44,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	pointer-events: all;
 }
 
 .logo{
@@ -116,7 +119,8 @@ a:hover{
 	background: linear-gradient(130deg, var(--dark), var(--dark-contrast) );
 	margin-top: 20px;
 	overflow: hidden;
-	/*z-index: -1;*/
+	z-index: -1;
+	pointer-events: all;
 }
 
 .athlete-content{
@@ -126,6 +130,7 @@ a:hover{
 	width: 100%;
 	background-color: var(--orange-contrast);
 	transition: all 1s cubic-bezier(0.19, 1.77, 1, 1);
+	/*pointer-events: all;*/
 }
 .general-content{
 	position: absolute;
